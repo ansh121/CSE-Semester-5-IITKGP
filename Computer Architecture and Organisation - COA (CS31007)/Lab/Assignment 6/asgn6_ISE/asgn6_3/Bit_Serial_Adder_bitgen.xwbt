@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 6\asgn6\asgn6_3\Bit_Serial_Adder.ncd
+OUTFILE=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 6\asgn6\asgn6_3\Bit_Serial_Adder.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 6\asgn6\asgn6_3
+LICENSE=WebPack
+USER_INFO=211778892_0_0_556

@@ -1,0 +1,106 @@
+Invalid operand
+Invalid operand
+\Invalid operand
+syntax errorParsing Error
+ NAME                                               TYPE   INITIAL VALUE  SIZE  OFFSET      NEXT TABLE
+
+GlobalTable
+ main                                                int            NULL     0       0       0x1cd6f70
+
+main Function
+filehandle                                                int               0     4       0            null 
+   t0                                                int               0     4       4            null 
+filename                                               char             'c'     1       8            null 
+   t1                                               char             'c'     1       9            null 
+count                                                int               0     4      10            null 
+printf                                               char                     0      14            null 
+   t2                                               char  "enter name\n"     1      14            null 
+   t3                                               char                     0      15            null 
+ gets                                               char                     0      15            null 
+   t4                                               char                     0      15            null 
+   t5                                               char "Now counter.\n"     1      15            null 
+   t6                                               char                     0      16            null 
+countername                                               char                     0      16            null 
+   t7                                               char                     0      16            null 
+   t8                                               char "Please count.\n"     1      16            null 
+   t9                                               char                     0      17            null 
+scanf                                               char                     0      17            null 
+  t10                                               char            "%d"     1      17            null 
+  t11                                           ptr(int)            (nil)    4      18            null 
+  t12                                               char                     0      22            null 
+creat                                               char                     0      22            null 
+S_IREAD                                               char                     0      22            null 
+S_IWRITE                                               char                     0      22            null 
+  t13                                               char                     0      22            null 
+globalInt                                               char                     0      22            null 
+  t14                                                int               0     4      22            null 
+fprintf                                               char                     0      26            null 
+   fp                                               char                     0      26            null 
+  t15                                               char            "%d"     1      26            null 
+  t16                                               char                     0      27            null 
+fclose                                               char                     0      27            null 
+  t17                                               char                     0      27            null 
+  t18                                               char "cannot open %s "     1      27            null 
+  t19                                               char                     0      28            null 
+  t20                                               char                     0      28            null 
+globalFloat                                               char                     0      28            null 
+  t21                                                int               0     4      28            null 
+  t22                                               char       "<?php\n"     1      32            null 
+  t23                                               char                     0      33            null 
+  t24                                               char "$counterFile = \"     1      33            null 
+    s                                               char                     0      34            null 
+
+quads
+ 0     t0 	=	     0            
+ 1  filehandle 	=	    t0            
+ 2     t1 	=	   'c'            
+ 3  filename 	=	    t1            
+ 4     t2 	=	 "enter name\n"            
+ 5  param  t2
+ 6     t3 	=	  call printf,    1
+ 7  param filename
+ 8     t4 	=	  call  gets,    1
+ 9     t5 	=	 "Now counter.\n"            
+10  param  t5
+11     t6 	=	  call printf,    1
+12  param countername
+13     t7 	=	  call  gets,    1
+14     t8 	=	 "Please count.\n"            
+15  param  t8
+16     t9 	=	  call printf,    1
+17    t10 	=	  "%d"            
+18    t11  =	 & count
+19  param t10
+20  param t11
+21    t12 	=	  call scanf,    2
+22  param countername
+23  param S_IREAD
+24    t13 	=	  call creat,    2
+25  filehandle 	=	   t13            
+26    t14 	=	     0            
+27     if globalInt == t14      goto   29
+28   goto  37
+29    t15 	=	  "%d"            
+30  param  fp
+31  param t15
+32  param count
+33    t16 	=	  call fprintf,    3
+34  param  fp
+35    t17 	=	  call fclose,    1
+36   goto  41
+37    t18 	=	 "cannot open %s "            
+38  param t18
+39  param countername
+40    t19 	=	  call printf,    2
+41  param filename
+42  param S_IREAD
+43    t20 	=	  call creat,    2
+44  filehandle 	=	   t20            
+45    t21 	=	     0            
+46     if globalFloat == t21      goto     
+47   goto    
+48    t22 	=	 "<?php\n"            
+49  param  fp
+50  param t22
+51    t23 	=	  call fprintf,    2
+52    t24 	=	 "$counterFile = \"            

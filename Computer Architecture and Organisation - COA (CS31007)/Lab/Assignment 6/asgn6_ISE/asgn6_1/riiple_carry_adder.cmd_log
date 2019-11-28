@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 riiple_carry_adder.ngc riiple_carry_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -t 1 riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 riiple_carry_adder.ngc riiple_carry_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -t 1 riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_carry_adder.ucf -p xc7a100t-csg324-3 riiple_carry_adder.ngc riiple_carry_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -mt off riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf -ucf ripple_carry_adder.ucf 
+xst -intstyle ise -ifn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.xst" -ofn "E:/17CS10005_17CS10007/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_carry_adder.ucf -p xc7a100t-csg324-3 riiple_carry_adder.ngc riiple_carry_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -mt off riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf -ucf ripple_carry_adder.ucf 
+bitgen -intstyle ise -f riiple_carry_adder.ut riiple_carry_adder.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_1/riiple_carry_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_carry_adder.ucf -p xc7a100t-csg324-3 "riiple_carry_adder.ngc" riiple_carry_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -mt off riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf -ucf ripple_carry_adder.ucf 
+bitgen -intstyle ise -f riiple_carry_adder.ut riiple_carry_adder.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_1/riiple_carry_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_1/riiple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_carry_adder.ucf -p xc7a100t-csg324-3 "riiple_carry_adder.ngc" riiple_carry_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o riiple_carry_adder_map.ncd riiple_carry_adder.ngd riiple_carry_adder.pcf 
+par -w -intstyle ise -ol high -mt off riiple_carry_adder_map.ncd riiple_carry_adder.ncd riiple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml riiple_carry_adder.twx riiple_carry_adder.ncd -o riiple_carry_adder.twr riiple_carry_adder.pcf -ucf ripple_carry_adder.ucf 
+bitgen -intstyle ise -f riiple_carry_adder.ut riiple_carry_adder.ncd 

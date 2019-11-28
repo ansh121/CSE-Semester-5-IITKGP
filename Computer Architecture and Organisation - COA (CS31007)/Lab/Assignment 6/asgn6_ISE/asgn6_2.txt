@@ -1,0 +1,143 @@
+Data Sheet report: 
+ ----------------- 
+ All values displayed in nanoseconds (ns) 
+  
+ Pad to Pad 
+ ---------------+---------------+---------+ 
+ Source Pad     |Destination Pad|  Delay  | 
+ ---------------+---------------+---------+ 
+ a<0>           |cout           |    9.346| 
+ a<0>           |sum<0>         |    7.880| 
+ a<0>           |sum<1>         |    7.352| 
+ a<0>           |sum<2>         |    7.844| 
+ a<0>           |sum<3>         |    8.079| 
+ a<0>           |sum<4>         |    9.048| 
+ a<0>           |sum<5>         |    9.157| 
+ a<0>           |sum<6>         |    9.372| 
+ a<0>           |sum<7>         |   10.311| 
+ a<1>           |cout           |    9.373| 
+ a<1>           |sum<1>         |    7.387| 
+ a<1>           |sum<2>         |    7.426| 
+ a<1>           |sum<3>         |    7.072| 
+ a<1>           |sum<4>         |    9.075| 
+ a<1>           |sum<5>         |    9.184| 
+ a<1>           |sum<6>         |    9.399| 
+ a<1>           |sum<7>         |   10.338| 
+ a<2>           |cout           |    8.706| 
+ a<2>           |sum<2>         |    7.194| 
+ a<2>           |sum<3>         |    6.827| 
+ a<2>           |sum<4>         |    8.408| 
+ a<2>           |sum<5>         |    8.517| 
+ a<2>           |sum<6>         |    8.732| 
+ a<2>           |sum<7>         |    9.671| 
+ a<3>           |cout           |    8.177| 
+ a<3>           |sum<3>         |    7.765| 
+ a<3>           |sum<4>         |    7.879| 
+ a<3>           |sum<5>         |    7.988| 
+ a<3>           |sum<6>         |    8.203| 
+ a<3>           |sum<7>         |    9.142| 
+ a<4>           |cout           |    8.030| 
+ a<4>           |sum<4>         |    7.183| 
+ a<4>           |sum<5>         |    7.218| 
+ a<4>           |sum<6>         |    7.629| 
+ a<4>           |sum<7>         |    8.362| 
+ a<5>           |cout           |    8.097| 
+ a<5>           |sum<5>         |    7.408| 
+ a<5>           |sum<6>         |    7.611| 
+ a<5>           |sum<7>         |    8.550| 
+ a<6>           |cout           |    7.435| 
+ a<6>           |sum<6>         |    6.818| 
+ a<6>           |sum<7>         |    7.885| 
+ a<7>           |cout           |    7.194| 
+ a<7>           |sum<7>         |    7.635| 
+ b<0>           |cout           |   10.510| 
+ b<0>           |sum<0>         |    8.330| 
+ b<0>           |sum<1>         |    8.510| 
+ b<0>           |sum<2>         |    8.810| 
+ b<0>           |sum<3>         |    8.537| 
+ b<0>           |sum<4>         |   10.212| 
+ b<0>           |sum<5>         |   10.321| 
+ b<0>           |sum<6>         |   10.536| 
+ b<0>           |sum<7>         |   11.475| 
+ b<1>           |cout           |   10.582| 
+ b<1>           |sum<1>         |    8.580| 
+ b<1>           |sum<2>         |    8.552| 
+ b<1>           |sum<3>         |    8.639| 
+ b<1>           |sum<4>         |   10.284| 
+ b<1>           |sum<5>         |   10.393| 
+ b<1>           |sum<6>         |   10.608| 
+ b<1>           |sum<7>         |   11.547| 
+ b<2>           |cout           |    8.413| 
+ b<2>           |sum<2>         |    7.698| 
+ b<2>           |sum<3>         |    7.099| 
+ b<2>           |sum<4>         |    8.115| 
+ b<2>           |sum<5>         |    8.224| 
+ b<2>           |sum<6>         |    8.439| 
+ b<2>           |sum<7>         |    9.378| 
+ b<3>           |cout           |    8.468| 
+ b<3>           |sum<3>         |    8.062| 
+ b<3>           |sum<4>         |    8.170| 
+ b<3>           |sum<5>         |    8.279| 
+ b<3>           |sum<6>         |    8.494| 
+ b<3>           |sum<7>         |    9.433| 
+ b<4>           |cout           |   10.168| 
+ b<4>           |sum<4>         |    9.317| 
+ b<4>           |sum<5>         |    9.517| 
+ b<4>           |sum<6>         |   10.163| 
+ b<4>           |sum<7>         |   10.667| 
+ b<5>           |cout           |    8.361| 
+ b<5>           |sum<5>         |    7.880| 
+ b<5>           |sum<6>         |    8.099| 
+ b<5>           |sum<7>         |    9.038| 
+ b<6>           |cout           |    7.443| 
+ b<6>           |sum<6>         |    7.284| 
+ b<6>           |sum<7>         |    7.887| 
+ b<7>           |cout           |    7.342| 
+ b<7>           |sum<7>         |    7.435| 
+ ---------------+---------------+---------+ 
+ 
+ 
+ 
+ 
+ Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   21  out of  63400     0%  
+    Number used as Logic:                21  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     21
+   Number with an unused Flip Flop:      21  out of     21   100%  
+   Number with an unused LUT:             0  out of     21     0%  
+   Number of fully used LUT-FF pairs:     0  out of     21     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    210    11%  
+ 
+ 
+ 
+ 
+ Delay:               3.356ns (Levels of Logic = 7)
+  Source:            a<1> (PAD)
+  Destination:       sum<7> (PAD)
+
+  Data Path: a<1> to sum<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.570  a_1_IBUF (a_1_IBUF)
+     LUT4:I0->O            1   0.097   0.295  Adder1/Madd_cout_Madd_lut<0>1_SW0 (N4)
+     LUT5:I4->O            3   0.097   0.521  Adder1/Madd_cout_Madd_lut<0>1 (Adder1/Madd_cout_Madd_lut<0>)
+     LUT5:I2->O            3   0.097   0.693  Adder2/n0062<0>11 (Adder2/n0062<0>1)
+     LUT6:I1->O            1   0.097   0.511  Adder2/Madd_C<3>_Madd_xor<0>11 (Adder2/C<3>)
+     LUT3:I0->O            1   0.097   0.279  Adder2/Mxor_sum_3_xo<0>1 (sum_7_OBUF)
+     OBUF:I->O                 0.000          sum_7_OBUF (sum<7>)
+    ----------------------------------------
+    Total                      3.356ns (0.486ns logic, 2.870ns route)
+                                       (14.5% logic, 85.5% route)

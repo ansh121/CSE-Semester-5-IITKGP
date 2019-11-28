@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/Bit_Serial_Adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/Bit_Serial_Adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bit_Serial_Adder.ucf -p xc7a100t-csg324-3 "Bit_Serial_Adder.ngc" Bit_Serial_Adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Bit_Serial_Adder_map.ncd Bit_Serial_Adder.ngd Bit_Serial_Adder.pcf 
+par -w -intstyle ise -ol high -mt off Bit_Serial_Adder_map.ncd Bit_Serial_Adder.ncd Bit_Serial_Adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Bit_Serial_Adder.twx Bit_Serial_Adder.ncd -o Bit_Serial_Adder.twr Bit_Serial_Adder.pcf -ucf Bit_Serial_Adder.ucf 
+bitgen -intstyle ise -f Bit_Serial_Adder.ut Bit_Serial_Adder.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/Bit_Serial_Adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/Bit_Serial_Adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bit_Serial_Adder.ucf -p xc7a100t-csg324-3 "Bit_Serial_Adder.ngc" Bit_Serial_Adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Bit_Serial_Adder_map.ncd Bit_Serial_Adder.ngd Bit_Serial_Adder.pcf 
+par -w -intstyle ise -ol high -mt off Bit_Serial_Adder_map.ncd Bit_Serial_Adder.ncd Bit_Serial_Adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Bit_Serial_Adder.twx Bit_Serial_Adder.ncd -o Bit_Serial_Adder.twr Bit_Serial_Adder.pcf -ucf Bit_Serial_Adder.ucf 
+bitgen -intstyle ise -f Bit_Serial_Adder.ut Bit_Serial_Adder.ncd 

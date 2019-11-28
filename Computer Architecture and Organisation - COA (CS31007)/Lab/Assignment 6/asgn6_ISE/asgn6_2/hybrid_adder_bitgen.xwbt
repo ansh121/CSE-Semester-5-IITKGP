@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\student\Desktop\asgn6_2\hybrid_adder.ncd
+OUTFILE=C:\Users\student\Desktop\asgn6_2\hybrid_adder.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\student\Desktop\asgn6_2
+LICENSE=WebPack
+USER_INFO=210925135_0_0_943

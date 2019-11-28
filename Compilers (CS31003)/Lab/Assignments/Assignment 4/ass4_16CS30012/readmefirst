@@ -1,0 +1,11 @@
+// Make 
+make
+
+// Delete files
+make clean
+
+// Test on test file
+make test
+
+// Lexer file is modified( only change is separate tokens for keywords and punctuators)
+// Try making errors in the test file and the parser will detect accordingly !!

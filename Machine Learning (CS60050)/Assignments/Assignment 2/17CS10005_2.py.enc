@@ -1,0 +1,108 @@
+# Name          -  Satyam Porwal
+# Roll No       - 17CS10048
+# Assignment No - 2
+#               -
+
+import csv
+import numpy as np
+
+def read_csv(fileAddress):
+    data=[]
+    value=[]
+    with open(fileAddress) as csvFile:
+        csvReader = csv.reader(csvFile)
+        count=0
+        for row in csvReader:
+            temp = row[0].split(',')
+            if(count==0):
+                names = temp
+            else:
+                data.append(temp[1:7])
+                value.append(temp[0])
+            count += 1
+    names = np.asarray(names)
+    data = np.asarray(data)
+    value = np.asarray(value)
+    return names,data,value
+
+def count(array,find):
+    count=0
+    for x in array:
+        if(x==find):
+            count+=1
+    return count
+
+def unique_list(d):
+    tmp =[]
+    for x in d:
+        tmp.append(x)
+    return np.unique(tmp)   
+
+def calc_yes_all_data(names,data,value,yes_count,find):
+    prob= []
+    for x in range(len(names)-1):
+        dist_values = ['1','2','3','4','5']
+        dist_size = len(dist_values)
+        temp_prob=[]
+        for val in dist_values:
+            indexes = np.where(data[:,x-1]==val)
+            temp = []
+            for i in indexes:
+                temp.append(value[i])
+            temp_prob.append((count(temp[0],find)+1)/(yes_count+dist_size))
+        temp_prob = np.asarray(temp_prob)
+        prob.append(temp_prob)
+    prob = np.asarray(prob)
+    return prob
+
+def dist_val_count(array):
+    dist_values = unique_list(array)
+    dist_count = []
+    for i in dist_values:
+        dist_count.append(int(count(array,i)))
+    return dist_values, dist_count
+
+def train_data(dist_values, dist_count, names, data, value):
+    train = []
+    for i  in range(len(dist_values)):
+        train.append(calc_yes_all_data(names,data,value,dist_count[i],dist_values[i]))
+    train = np.asarray(train)
+    return train
+
+def test_one(inp, exp_out,trained_data,train_dist_val,train_dist_prob):
+    mx = 0
+    for i in range(np.shape(trained_data)[0]):
+        prob = train_dist_prob[i]
+        for j in range(len(inp)):
+            prob *= float(trained_data[i][j-1][int(inp[j])-1])
+        if(prob>mx):
+            mx = prob
+            test_out = train_dist_val[i]
+    if(test_out == exp_out):
+        return 1
+    else:
+        return 0
+
+def test(tst_data,tst_value,train,dist_values,dist_prob):
+    total   = 0
+    correct = 0
+    for i in range(len(tst_data)):
+        correct += test_one(tst_data[i],tst_value[i],train,dist_values,dist_prob)
+        total   += 1
+    return correct/total
+
+def get_prob(array):
+    total = sum(array)
+    ans = [x/total for x in array]
+    return ans
+
+
+
+names,tr_data,tr_value = read_csv("data2_19.csv")
+names,tst_data,tst_value = read_csv("test2_19.csv")
+dist_values, dist_count = dist_val_count(tr_value)
+dist_prob = get_prob(dist_count)
+train = train_data(dist_values, dist_count, names, tr_data, tr_value)
+accuracy = test(tst_data,tst_value,train,dist_values,dist_prob)
+ans = accuracy*100
+print("Accuracy of the model is %.3f %%"%ans)

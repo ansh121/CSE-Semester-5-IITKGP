@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>Closest Pair : </h1>
+<svg width="700" height="450">
+<rect width="700" height="450" style="fill:rgb(255,255,255); stroke-width:0; stroke:rgb(0,0,0)" />
+<circle cx="75" cy="15" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="75" cy="15" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="102" cy="132" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="102" cy="132" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="114" cy="397" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="114" cy="397" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="138" cy="217" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="138" cy="217" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="170" cy="40" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="170" cy="40" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="238" cy="256" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="238" cy="256" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="241" cy="154" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="241" cy="154" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="269" cy="268" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="269" cy="268" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="276" cy="292" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="276" cy="292" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="312" cy="185" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="312" cy="185" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="341" cy="23" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="341" cy="23" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="352" cy="14" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="352" cy="14" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="359" cy="360" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="359" cy="360" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="375" cy="393" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="375" cy="393" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="389" cy="157" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="389" cy="157" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="394" cy="317" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="394" cy="317" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="510" cy="17" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="510" cy="17" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="533" cy="322" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="533" cy="322" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="559" cy="258" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="559" cy="258" r="2" stroke="black" stroke-width="0" fill="#000000" />
+<circle cx="639" cy="74" r="7.10634" stroke="#0066ff" stroke-width="0" fill="#0066ff" fill-opacity="0.4" />
+<circle cx="639" cy="74" r="2" stroke="black" stroke-width="0" fill="#000000" />
+</svg>
+</body>
+</html>

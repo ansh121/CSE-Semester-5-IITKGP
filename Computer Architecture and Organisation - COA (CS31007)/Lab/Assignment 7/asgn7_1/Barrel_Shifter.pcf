@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Aug 26 10:33:22 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dir" LOCATE = SITE "T13" LEVEL 1;
+COMP "in<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "in<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "in<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "in<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "in<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "in<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "in<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "in<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "shamt<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "shamt<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "shamt<2>" LOCATE = SITE "R16" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "out<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "out<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "out<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "out<7>" LOCATE = SITE "U16" LEVEL 1;
+SCHEMATIC END;
+

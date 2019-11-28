@@ -1,0 +1,534 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: FP_adder_32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FP_adder_32.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FP_adder_32"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : FP_adder_32
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v" into library work
+Parsing module <FP_adder_32>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <FP_adder_32>.
+WARNING:HDLCompiler:413 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v" Line 71: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v" Line 82: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FP_adder_32>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <start> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 26-bit register for signal <tempsum>.
+    Found 32-bit register for signal <exp_1>.
+    Found 24-bit register for signal <mant_a>.
+    Found 24-bit register for signal <mant_b>.
+    Found 32-bit register for signal <exp>.
+    Found 1-bit register for signal <sign_a>.
+    Found 1-bit register for signal <sign_b>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit register for signal <sum>.
+    Found 32-bit subtractor for signal <GND_1_o_GND_1_o_sub_61_OUT> created at line 80.
+    Found 32-bit subtractor for signal <n0317> created at line 80.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_88_OUT> created at line 119.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_89_OUT> created at line 120.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_91_OUT> created at line 121.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_93_OUT> created at line 121.
+    Found 26-bit adder for signal <n0252> created at line 65.
+    Found 32-bit adder for signal <n0313> created at line 66.
+    Found 32-bit adder for signal <exp_1[31]_GND_1_o_add_7_OUT> created at line 69.
+    Found 32-bit adder for signal <n0194> created at line 71.
+    Found 32-bit adder for signal <n0221> created at line 82.
+    Found 26-bit adder for signal <GND_1_o_GND_1_o_add_71_OUT> created at line 96.
+    Found 26-bit adder for signal <GND_1_o_GND_1_o_add_75_OUT> created at line 101.
+    Found 26-bit adder for signal <GND_1_o_GND_1_o_add_77_OUT> created at line 105.
+    Found 26-bit adder for signal <n0231> created at line 107.
+    Found 32-bit adder for signal <counter[31]_GND_1_o_add_101_OUT> created at line 127.
+    Found 26-bit shifter logical left for signal <n0218> created at line 79
+    Found 24-bit shifter logical right for signal <PWR_1_o_GND_1_o_shift_right_91_OUT> created at line 121
+    Found 24-bit shifter logical right for signal <PWR_1_o_GND_1_o_shift_right_93_OUT> created at line 121
+    Found 32-bit comparator greater for signal <n0000> created at line 61
+    Found 32-bit comparator greater for signal <n0140> created at line 90
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_90_o> created at line 121
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_96_o> created at line 122
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred 204 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  65 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <FP_adder_32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 10-bit subtractor                                     : 2
+ 26-bit adder                                          : 5
+ 32-bit adder                                          : 5
+ 32-bit subtractor                                     : 2
+ 9-bit subtractor                                      : 2
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 24-bit register                                       : 2
+ 26-bit register                                       : 1
+ 32-bit register                                       : 4
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 4
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 31
+ 24-bit 2-to-1 multiplexer                             : 5
+ 26-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 24
+# Logic shifters                                       : 3
+ 24-bit shifter logical right                          : 2
+ 26-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <FP_adder_32>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <FP_adder_32> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 10-bit subtractor                                     : 2
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 4
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 2
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 172
+ Flip-Flops                                            : 172
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 4
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 31
+ 24-bit 2-to-1 multiplexer                             : 5
+ 26-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 24
+# Logic shifters                                       : 3
+ 24-bit shifter logical right                          : 2
+ 26-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <exp_8> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_9> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_10> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_111> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_12> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_13> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_14> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_15> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_16> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_17> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_18> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_19> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_20> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_21> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_22> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_23> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_24> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_25> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_26> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_27> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_28> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_29> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_30> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_31> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_8> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_9> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_10> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_11> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_12> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_13> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_14> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_15> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_16> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_17> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_18> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_19> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_20> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_21> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_22> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_23> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_24> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_25> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_26> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_27> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_28> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_29> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_30> of sequential type is unconnected in block <FP_adder_32>.
+WARNING:Xst:2677 - Node <exp_1_31> of sequential type is unconnected in block <FP_adder_32>.
+
+Optimizing unit <FP_adder_32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FP_adder_32, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 156
+ Flip-Flops                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FP_adder_32.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1037
+#      GND                         : 1
+#      INV                         : 76
+#      LUT1                        : 72
+#      LUT2                        : 19
+#      LUT3                        : 100
+#      LUT4                        : 38
+#      LUT5                        : 114
+#      LUT6                        : 204
+#      MUXCY                       : 207
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 196
+# FlipFlops/Latches                : 156
+#      FD                          : 90
+#      FDE                         : 66
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 96
+#      IBUF                        : 64
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             156  out of  126800     0%  
+ Number of Slice LUTs:                  623  out of  63400     0%  
+    Number used as Logic:               623  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    633
+   Number with an unused Flip Flop:     477  out of    633    75%  
+   Number with an unused LUT:            10  out of    633     1%  
+   Number of fully used LUT-FF pairs:   146  out of    633    23%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          99
+ Number of bonded IOBs:                  97  out of    210    46%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 156   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.683ns (Maximum Frequency: 213.557MHz)
+   Minimum input arrival time before clock: 4.825ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.683ns (frequency: 213.557MHz)
+  Total number of paths / destination ports: 134492 / 164
+-------------------------------------------------------------------------
+Delay:               4.683ns (Levels of Logic = 31)
+  Source:            mant_b_0 (FF)
+  Destination:       tempsum_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mant_b_0 to tempsum_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.299  mant_b_0 (mant_b_0)
+     LUT1:I0->O            1   0.097   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<0>_rt (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<0> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<1> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<2> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<3> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<4> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<5> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<6> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<7> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<8> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<9> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<10> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<11> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<12> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<13> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<14> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<15> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<16> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<17> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<18> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<19> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<20> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_1_o_GND_1_o_add_75_OUT_cy<21> (Madd_GND_1_o_GND_1_o_add_75_OUT_cy<21>)
+     XORCY:CI->O           1   0.370   0.379  Madd_GND_1_o_GND_1_o_add_75_OUT_xor<22> (GND_1_o_GND_1_o_add_75_OUT<22>)
+     LUT6:I4->O            1   0.097   0.000  Madd_GND_1_o_GND_1_o_add_77_OUT_lut<22> (Madd_GND_1_o_GND_1_o_add_77_OUT_lut<22>)
+     MUXCY:S->O            1   0.353   0.000  Madd_GND_1_o_GND_1_o_add_77_OUT_cy<22> (Madd_GND_1_o_GND_1_o_add_77_OUT_cy<22>)
+     XORCY:CI->O           2   0.370   0.283  Madd_GND_1_o_GND_1_o_add_77_OUT_xor<23> (GND_1_o_GND_1_o_add_77_OUT<23>)
+     INV:I->O              1   0.113   0.000  n0326<23>1_INV_0 (n0326<23>)
+     MUXCY:S->O            0   0.353   0.000  Madd_n0231_Madd_cy<23> (Madd_n0231_Madd_cy<23>)
+     XORCY:CI->O           1   0.370   0.295  Madd_n0231_Madd_xor<24> (n0231<24>)
+     LUT3:I2->O            1   0.097   0.000  Mmux_GND_1_o_PWR_1_o_mux_81_OUT171 (GND_1_o_PWR_1_o_mux_81_OUT<24>)
+     FDE:D                     0.008          tempsum_24
+    ----------------------------------------
+    Total                      4.683ns (3.425ns logic, 1.258ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 44196 / 58
+-------------------------------------------------------------------------
+Offset:              4.825ns (Levels of Logic = 9)
+  Source:            b<28> (PAD)
+  Destination:       mant_a_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: b<28> to mant_a_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.698  b_28_IBUF (Msub_GND_1_o_GND_1_o_sub_89_OUT_lut<5>)
+     LUT6:I0->O            8   0.097   0.411  Msub_GND_1_o_GND_1_o_sub_89_OUT_cy<5>11 (Msub_GND_1_o_GND_1_o_sub_89_OUT_cy<5>)
+     LUT3:I1->O           27   0.097   0.485  Msub_GND_1_o_GND_1_o_sub_89_OUT_xor<8>11 (GND_1_o_GND_1_o_sub_89_OUT<8>)
+     LUT2:I0->O            1   0.097   0.000  Msub_GND_1_o_GND_1_o_sub_91_OUT_lut<8> (Msub_GND_1_o_GND_1_o_sub_91_OUT_lut<8>)
+     MUXCY:S->O            0   0.353   0.000  Msub_GND_1_o_GND_1_o_sub_91_OUT_cy<8> (Msub_GND_1_o_GND_1_o_sub_91_OUT_cy<8>)
+     XORCY:CI->O           1   0.370   0.556  Msub_GND_1_o_GND_1_o_sub_91_OUT_xor<9> (GND_1_o_GND_1_o_sub_91_OUT<9>)
+     LUT5:I1->O           20   0.097   0.644  out11 (_n0359)
+     LUT5:I1->O            6   0.097   0.716  Mmux_PWR_1_o_PWR_1_o_mux_100_OUT11711 (Mmux_PWR_1_o_PWR_1_o_mux_100_OUT1171)
+     LUT6:I0->O            1   0.097   0.000  Mmux_PWR_1_o_PWR_1_o_mux_100_OUT1121 (PWR_1_o_PWR_1_o_mux_98_OUT<11>)
+     FD:D                      0.008          mant_a_11
+    ----------------------------------------
+    Total                      4.825ns (1.314ns logic, 3.511ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            sum_31 (FF)
+  Destination:       sum<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sum_31 to sum<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.361   0.279  sum_31 (sum_31)
+     OBUF:I->O                 0.000          sum_31_OBUF (sum<31>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.683|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.79 secs
+ 
+--> 
+
+Total memory usage is 4655984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   52 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

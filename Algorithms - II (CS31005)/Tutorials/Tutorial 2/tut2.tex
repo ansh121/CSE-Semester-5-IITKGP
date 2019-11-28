@@ -1,0 +1,127 @@
+\documentclass{article}
+\title{Tutorial 2}
+\date{04-08-2019}
+\author{Anshul Choudhary(17CS10005)}
+
+\usepackage{amsmath}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{fixltx2e}
+
+\begin{document}
+  \maketitle
+  
+  \section{Problem Statement}
+    
+P[1..n] is an input list of n points on xy-plane. Assume that all n points have distinct x-coordinates and
+distinct y-coordinates. Let p L and p R denote the leftmost and the rightmost points of P , respectively.
+The task is to find the polygon Q with P as its vertex set such that the following conditions are
+satisfied.\\\\
+i) The upper vertex chain of Q is x-monotone (increasing) from pL to pR.\\
+ii) The lower vertex chain of Q is x-monotone (decreasing) from pR to pL.\\
+iii) Perimeter of Q is minimum.\\\\
+You have to answer the following. Provide necessary figures/diagrams for explanations.\\\\
+1. Develop the recurrences needed for DP, with clear arguments.\\
+2. Design the algorithm and write its main steps.\\
+3. Derive the time and space complexities of your algorithm.\\
+  
+  \section{Recurrences}
+  
+  	Let p1,p2, . . . ,pn denote the points by ordered by increasing x-coordinates, l(i,j) denote the length of a shortest path with endpoints p\textsubscript{i} and p\textsubscript{j} , i $<$ j and dist(p\textsubscript{i},p\textsubscript{j}) denote the distance between point pi and pj.
+
+    
+      \begin{equation*}
+        l(i,j)=\begin{cases}
+		   dist(p\textsubscript{i},p\textsubscript{j})\ \ \ \ \ \ \ \ \ \ \  \ \ if\ i = 1\ and\ j = 2 \\
+			\\
+           l(i,j-1)+dist(p\textsubscript{j-1},p\textsubscript{j}) \ \ \ \ \ \ \ if\ i < j-1\\
+			\\
+           min\textsubscript{$1 \leq k < i$}\ (l(k,i) + dist(p\textsubscript{k},p\textsubscript{j}))\ \ \ \ if\ j > 2\ \ and \ \ i=j-1\\
+               	\end{cases}
+        \end{equation*}
+  
+  \section{Algorithm}
+    N(i,j) denotes the neighbour of p\textsubscript{j} in a shortest x-monotone path from p\textsubscript{i} to p\textsubscript{j}\\  
+    \begin{algorithm}[H]
+	n$\leftarrow$ $\vert$p$\vert$\\
+	Compute $l(i,j)\ and\ N(i,j)$, for all $1 \leq i < j < n$.\\
+	\For{ j = 2 to n }
+	{
+		\For{ i = 1 to j-1 }
+		{
+			\If{ i = 1 and j = 2}
+			{
+				$l[i,j] \longleftarrow dist(p[i], p[j])$\\
+				$N[i,j] \longleftarrow i$\\
+			}
+			\ElseIf{ $j>i+1$ }
+			{
+				$l[i,j] \longleftarrow p[i,j-1] + dist(p[j-1],p[j])$\\
+				$N[i,j] \longleftarrow j-1$\\
+			}
+			\Else
+			{
+				$l[i,j] \longleftarrow +\infty $\\
+				\For{ k = 1 to i-1 }
+				{
+					$q \longleftarrow l[k,i] + dist(p[k],p[j])$\\
+					\If{ $q < l[i,j]$ }
+					{
+						$l[i,j] \longleftarrow q$\\
+						$N[i,j] \longleftarrow k$\\
+					}	
+				}
+			}
+		}
+	}	
+     
+Construct the path. Stacks S[1] and S[2] will be used to construct the two x-monotone parts of the path.\\
+Let S be an array of two initially empty stacks S[1] and S[2].\\
+
+	$k \longleftarrow 1 $\\
+	$i=n-1 $\\
+	$j=n $\\
+	\While{$j>1$}
+	{
+		PUSH(S[k],j)\\
+		$j \longleftarrow N[i,j]$\\
+		\If{$j<i$}
+		{
+			swap $i \longleftrightarrow j$\\
+			$k \longleftarrow 3-k$\\
+		}
+	}
+
+	PUSH(S[1],1)\\
+	\While{ S[2] is not empty }
+	{
+		PUSH(S[1],POP(S[2]))\\
+	}
+	\For{i=1 to n}{
+		$T[i] \longleftarrow POP(S[1])$\\
+	}
+     \end{algorithm}
+     
+Array T contains the points in the order they are connected consecutvely.\\
+  
+  \section{Observations}
+  1. Points p\textsubscript{n-1} and p\textsubscript{n} are neighbours in any bitonic tour that visits points $p1, p2, . . . , pn$.\\
+  2. Given a normal bitonic path P with endpoints p\textsubscript{i} and p\textsubscript{j} , $i < j$, let p\textsubscript{k} be the neighbour of p\textsubscript{j} on this path. Then the path P' obtained by removing p\textsubscript{j} from P is a normal bitonic path with endpoints p\textsubscript{i} and p\textsubscript{k}. In particular, p\textsubscript{j-1} $∈$ {p\textsubscript{i}, p\textsubscript{k} }. If P is a shortest normal bitonic path with endpoints p\textsubscript{i} and p\textsubscript{j} , then P' is a shortest normal bitonic path with endpoints p\textsubscript{i} and p\textsubscript{k}.\\
+  3. Consider the neighbour p\textsubscript{k} of p\textsubscript{j} in a normal bitonic path P with endpoints p\textsubscript{i} and p\textsubscript{j} , $i < j$. If $i=j-1$, we have$ 1 \leq k < i$. If $i < j - 1$, we have $k = j-1$.\\
+
+   
+   
+  \section{Time and space complexities}
+  
+  It is easy to see that lines 25-43 take linear time. Indeed, the loop in Lines 42-44 is executed n times and performs constant work per iteration. The loop in Lines 39-40 is executed $\vert S[2]\vert $ times, and each iteration takes constant time; hence, it suffices to prove that $ \vert S[2]\vert \leq n $ after the execution of Lines 25-38. To prove this, it suffices to show that the loop in Lines 30-37 is executed at most n-1 times because every iteration pushes only one entry onto stack S[1] or S[2]. The loop in Lines 30-37 takes constant time per iteration. It is executed until j=1. However, initially j=n, and the computation performed inside the loop guarantees that j decreases by one in each iteration. Hence, the loop is executed at most n-1 times. To analyze the running time of Lines 1-24, we first observe that this part of the algorithm consists of two nested loops; the code in Lines 5-22 is executed $O(n\textsuperscript{2} )$ times because i runs from 2 to n and in every iteration of the outer loop, j runs from 1 to i-1. Now, we perform constant work inside the loop unless i=j-1. In the latter case, we execute the loop in Lines 15-21, (i-1)=O(n) times. Since there are only n-1 pairs (i,j) such that
+$1\leq i=j-1 < n-1$, we spend linear time in only n-1 iterations of the two outer loops and constant time in all other iterations. Hence, the running time of this algorithm is,
+  \begin{equation*}
+ 	 Time Complexity=O(n\textsuperscript{2}\ .\ 1 + n\ .\ n) = O(n\textsuperscript{2} ).	 
+  \end{equation*}
+Since we are using a 2D matrix of size N x N (N $\Longrightarrow no. of points$) in the first part. Rest of the extra space used is of the size of O(n). Hence the Space Complexity will be,
+  \begin{equation*}
+ 	 Space Complexity=O(n\textsuperscript{2})	 
+  \end{equation*}
+   
+
+\end{document}
+\grid

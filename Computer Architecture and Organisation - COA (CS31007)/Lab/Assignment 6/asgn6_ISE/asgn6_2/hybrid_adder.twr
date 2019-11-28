@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr
+hybrid_adder.pcf -ucf hybrid_adder.ucf
+
+Design file:              hybrid_adder.ncd
+Physical constraint file: hybrid_adder.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |cout           |    9.346|
+a<0>           |sum<0>         |    7.880|
+a<0>           |sum<1>         |    7.352|
+a<0>           |sum<2>         |    7.844|
+a<0>           |sum<3>         |    8.079|
+a<0>           |sum<4>         |    9.048|
+a<0>           |sum<5>         |    9.157|
+a<0>           |sum<6>         |    9.372|
+a<0>           |sum<7>         |   10.311|
+a<1>           |cout           |    9.373|
+a<1>           |sum<1>         |    7.387|
+a<1>           |sum<2>         |    7.426|
+a<1>           |sum<3>         |    7.072|
+a<1>           |sum<4>         |    9.075|
+a<1>           |sum<5>         |    9.184|
+a<1>           |sum<6>         |    9.399|
+a<1>           |sum<7>         |   10.338|
+a<2>           |cout           |    8.706|
+a<2>           |sum<2>         |    7.194|
+a<2>           |sum<3>         |    6.827|
+a<2>           |sum<4>         |    8.408|
+a<2>           |sum<5>         |    8.517|
+a<2>           |sum<6>         |    8.732|
+a<2>           |sum<7>         |    9.671|
+a<3>           |cout           |    8.177|
+a<3>           |sum<3>         |    7.765|
+a<3>           |sum<4>         |    7.879|
+a<3>           |sum<5>         |    7.988|
+a<3>           |sum<6>         |    8.203|
+a<3>           |sum<7>         |    9.142|
+a<4>           |cout           |    8.030|
+a<4>           |sum<4>         |    7.183|
+a<4>           |sum<5>         |    7.218|
+a<4>           |sum<6>         |    7.629|
+a<4>           |sum<7>         |    8.362|
+a<5>           |cout           |    8.097|
+a<5>           |sum<5>         |    7.408|
+a<5>           |sum<6>         |    7.611|
+a<5>           |sum<7>         |    8.550|
+a<6>           |cout           |    7.435|
+a<6>           |sum<6>         |    6.818|
+a<6>           |sum<7>         |    7.885|
+a<7>           |cout           |    7.194|
+a<7>           |sum<7>         |    7.635|
+b<0>           |cout           |   10.510|
+b<0>           |sum<0>         |    8.330|
+b<0>           |sum<1>         |    8.510|
+b<0>           |sum<2>         |    8.810|
+b<0>           |sum<3>         |    8.537|
+b<0>           |sum<4>         |   10.212|
+b<0>           |sum<5>         |   10.321|
+b<0>           |sum<6>         |   10.536|
+b<0>           |sum<7>         |   11.475|
+b<1>           |cout           |   10.582|
+b<1>           |sum<1>         |    8.580|
+b<1>           |sum<2>         |    8.552|
+b<1>           |sum<3>         |    8.639|
+b<1>           |sum<4>         |   10.284|
+b<1>           |sum<5>         |   10.393|
+b<1>           |sum<6>         |   10.608|
+b<1>           |sum<7>         |   11.547|
+b<2>           |cout           |    8.413|
+b<2>           |sum<2>         |    7.698|
+b<2>           |sum<3>         |    7.099|
+b<2>           |sum<4>         |    8.115|
+b<2>           |sum<5>         |    8.224|
+b<2>           |sum<6>         |    8.439|
+b<2>           |sum<7>         |    9.378|
+b<3>           |cout           |    8.468|
+b<3>           |sum<3>         |    8.062|
+b<3>           |sum<4>         |    8.170|
+b<3>           |sum<5>         |    8.279|
+b<3>           |sum<6>         |    8.494|
+b<3>           |sum<7>         |    9.433|
+b<4>           |cout           |   10.168|
+b<4>           |sum<4>         |    9.317|
+b<4>           |sum<5>         |    9.517|
+b<4>           |sum<6>         |   10.163|
+b<4>           |sum<7>         |   10.667|
+b<5>           |cout           |    8.361|
+b<5>           |sum<5>         |    7.880|
+b<5>           |sum<6>         |    8.099|
+b<5>           |sum<7>         |    9.038|
+b<6>           |cout           |    7.443|
+b<6>           |sum<6>         |    7.284|
+b<6>           |sum<7>         |    7.887|
+b<7>           |cout           |    7.342|
+b<7>           |sum<7>         |    7.435|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Aug 19 16:03:55 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 615 MB
+
+
+

@@ -1,0 +1,61 @@
+Parsing successful
+ NAME                                               TYPE   INITIAL VALUE  SIZE  OFFSET      NEXT TABLE
+
+GlobalTable
+  our                                               void            NULL     0       0       0x1e12f70
+ main                                               void            NULL     0       0       0x1e18640
+
+our Function
+    i                                                int              32     4       0            null 
+   t0                                                int               0     4       4            null 
+   t1                                                int            3999     4       8            null 
+   t2                                                int               2     4      12            null 
+   t3                                               char             'A'     1      16            null 
+   t4                                               char             'Z'     1      17            null 
+   t5                                                int              32     4      18            null 
+   t6                                                int               0     4      22            null 
+   t7                                               char             'a'     1      26            null 
+   t8                                               char             'z'     1      27            null 
+   t9                                                int              32     4      28            null 
+ prev                                               char                     0      32            null 
+  t10                                               char                     0      32            null 
+
+main Function
+  far                                                int               0     4       0            null 
+    p                                                int               0     4       4            null 
+  t11                                                int              36     4       8            null 
+  t12                                               char                     0      12            null 
+
+quads
+ 0     t0 	=	     0            
+ 1      i 	=	    t0            
+ 2     t1 	=	  3999            
+ 3     if     i <=  t1      goto    8
+ 4   goto  27
+ 5     t2 	=	     2            
+ 6      i 	=	    t2            
+ 7   goto   2
+ 8     t3 	=	   'A'            
+ 9     if     i >=  t3      goto   11
+10   goto  18
+11     t4 	=	   'Z'            
+12     if     i <=  t4      goto   14
+13   goto  18
+14     t5 	=	    32            
+15     t6 	=	    t5     +     i
+16      i 	=	    t6            
+17   goto   5
+18     t7 	=	   'a'            
+19     if     i >=  t7      goto   21
+20   goto   5
+21     t8 	=	   'z'            
+22     if     i <=  t8      goto   24
+23   goto   5
+24     t9 	=	    32            
+25      i 	=	    t9            
+26   goto   5
+27    t10 	=	  call  prev,    0
+28    t11 	=	    36            
+29      p 	=	   t11            
+30    t12 	=	  call   our,    0
+31      p 	=	   t12            

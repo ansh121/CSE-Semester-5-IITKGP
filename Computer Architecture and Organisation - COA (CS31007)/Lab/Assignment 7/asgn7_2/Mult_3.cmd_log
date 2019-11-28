@@ -1,0 +1,102 @@
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 Mult_3.ngc Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.xst" -ofn "C:/Users/student/Desktop/COA2019/Asgn7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_2/Mult_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mult_3.ucf -p xc7a100t-csg324-3 "Mult_3.ngc" Mult_3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mult_3_map.ncd Mult_3.ngd Mult_3.pcf 
+par -w -intstyle ise -ol high -mt off Mult_3_map.ncd Mult_3.ncd Mult_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mult_3.twx Mult_3.ncd -o Mult_3.twr Mult_3.pcf -ucf Mult_3.ucf 
+bitgen -intstyle ise -f Mult_3.ut Mult_3.ncd 

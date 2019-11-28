@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v" Line 71: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 9\Asgn9\FP_adder_32.v" Line 82: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">start</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_111</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exp_1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FP_adder_32</arg>&gt;.
+</msg>
+
+</messages>

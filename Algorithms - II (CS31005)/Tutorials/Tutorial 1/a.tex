@@ -1,0 +1,131 @@
+\documentclass{article}
+\title{Tutorial 1}
+\date{17-07-2019}
+\author{Anshul Choudhary(17CS10005)}
+
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+
+\begin{document}
+  \maketitle
+  
+  \section{Problem Statement}
+    $A[1..m]$ and $B[1..n]$ are two 1D arrays containing $m$ and $n$ integers 
+    respectively, where $m\le n$.
+    We need to construct a sub-array $C[1..m]$ of $B$ such that 
+    $\sum\limits_{i=1}^{m} \big|A[i]-C[i]\big|$ is minimized.
+  
+  \section{Recurrences}
+  
+    Lets denote M[i][j] as the minimum value of   $\sum\limits_{j=1}^{i} \big|A[j]-C[j]\big|$ when array $A[1..i]$ and $B[1..j]$ are considered where $i >= j$, $i <= m$ and $j <= n$.
+    
+      \begin{equation*}
+        M[i][j]=\begin{cases}
+		   |A[i] - B[j]|\ \ \ \ \ if\ i = 1\ and\ j = 1 \\
+			\\
+                   min\{ |A[i] - B[j] |  ,  M[i][j-1] \};\ \ \ \ \ if\ i = 1\ and\ j != 1\\
+			\\
+                   INT\_MAX;\ \ \ \ if\ i > j\\
+			\\
+                   min\{ |A[i] - B[j] | + M[i-1][j-1]  ,  M[i][j-1] \}\ \ \ \ otherwise \\
+                \end{cases}
+        \end{equation*}
+
+Here M[n][m] is the final ans.
+  
+  \section{Algorithm}
+  
+    \begin{algorithm}[H]
+	int M[n][m]\\
+	\For{ i = 1 to n }
+	{
+		\For{ j = 1 to m }
+		{
+			\If{ i == 1}
+			{
+				\If{j==1}
+				{
+					M[i][j] = ${|A[i] - B[j]}$ \;
+				}
+				\Else
+				{
+					M[i][j] = ${min\{|A[i] - B[j],\ M[i][j-1]\}}$ \;
+				}
+			}
+			\ElseIf{ i $>$ j }
+			{
+				M[i][j] = INT\_MAX \;
+			}
+			\Else
+			{
+				M[i][j] = ${min\{|A[i] - B[j]| + M[i-1][j-1],\ M[i][j-1]\}}$ \;
+			}
+		}
+	}
+	
+	
+	
+	char B[m]\\
+	i=m\\
+	j=n\\
+	
+	while(j!=0)\\
+	\{\\
+		\ \ \ while($i>0 ans M[j][i]==M[j][i-1]$)\\
+	\ \ \ 	\{\\
+		\ \ \ \ 	i--\\
+		\ \ \ \}\\
+		\ \ \ $C[m-i]=B[j][i]$\\
+		\ \ \ j--\\
+	\}\\
+	
+	
+
+     \end{algorithm}
+  
+  \section{Demonstration}
+  
+  Lets take an example ,
+  \begin{equation*}
+  	A=[4\ 5\ 8\ 6\ 7]\\
+  \end{equation*}
+  \begin{equation*}
+ 	 B=[2\ 4\ 3\ 1]
+  \end{equation*}
+  So the matrix M created is,
+   
+  \begin{equation*}
+ 	 M=\left[\begin{matrix}
+ 	 	2 & 2 & 2 & 2 & 2\\
+ 	 	X & 3 & 3 & 3 & 3\\
+ 	 	X & X & 8 & 6 & 6\\
+ 	 	X & X & X & 13 & 12
+ 	 \end{matrix}\right]
+  \end{equation*}
+  
+By calculating C[] from above matrix, we get,
+  \begin{equation*}
+ 	 C=[4\ 5\ 6\ 7]
+  \end{equation*}
+   
+   
+  \section{Time and space complexities}
+  
+  From the above pseudo code we can calculate Time Complexity as,\\
+  	(i) outer for loop will run n times ----$>$ O(n)\\
+  	(ii) inner for loop will run m times ----$>$ O(m)\\
+  So total time will be,
+  \begin{equation*}
+ 	 T=O(n)*O(m)	 
+  \end{equation*}
+  \begin{equation*}
+ 	 Time Complexity=O(n*m)	 
+  \end{equation*}
+Since we are using a 2D matrix of size m x n, the Space Complexity will be,\\
+  \begin{equation*}
+ 	 Space Complexity=O(n*m)	 
+  \end{equation*}
+   
+
+\end{document}
+\grid

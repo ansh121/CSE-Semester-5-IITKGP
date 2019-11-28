@@ -1,0 +1,111 @@
+Parsing successful
+ NAME                                               TYPE   INITIAL VALUE  SIZE  OFFSET      NEXT TABLE
+
+GlobalTable
+ test                                                int            NULL     4       0           (nil)
+   t0                                                int            NULL     4       0           (nil)
+  add                                                int            NULL     0       0       0x15c50c0
+ main                                               void            NULL     0       0       0x15c9e90
+
+add Function
+    a                                                int              10     4       0            null 
+    b                                                int               0     4       4            null 
+   t1                                                int              10     4       8            null 
+    x                                           ptr(int)            (nil)    4      12            null 
+    y                                                int               0     4      16            null 
+   t2                                           ptr(int)            (nil)    4      20            null 
+   t3                                                int               0     4      24            null 
+   t4                                                int               0     4      28            null 
+
+main Function
+    i                                                int               1     4       0            null 
+    a                                      array(10,int)                0   40       4            null 
+   t5                                                int              10     4      44            null 
+    v                                                int               5     4      48            null 
+   t6                                                int               5     4      52            null 
+    d                                             double        0.000000     8      56            null 
+    g                                          ptr(char)            (nil)    4      64            null 
+ NULL                                               char                     0      68            null 
+testChar                                    array(152,char)                   152      68            null 
+   t7                                                int             152     4     220            null 
+  tst                                               char                     1     224            null 
+   t8                                               char             's'     1     225            null 
+   t9                                               char             't'     1     226            null 
+  t10                                               char             'u'     1     227            null 
+  t11                                                int               0     4     228            null 
+  t12                                                int               0     4     232            null 
+  t13                                               char                     1     236            null 
+  t14                                                int               1     4     237            null 
+  t15                                                int              10     4     241            null 
+  t16                                                int               0     4     245            null 
+  t17                                                int               0     4     249            null 
+  t18                                                int               1     4     253            null 
+  t19                                                int               1     4     257            null 
+  t20                                                int               1     4     261            null 
+  t21                                                int               0     4     265            null 
+  t22                                                int               0     4     269            null 
+  t23                                                int               0     4     273            null 
+  t24                                                int               2     4     277            null 
+  t25                                                int               1     4     281            null 
+  t26                                                int               0     4     285            null 
+  t27                                                int               0     4     289            null 
+  t28                                                int               1     4     293            null 
+
+quads
+ 0     t0 	=	     3            
+ 1   test 	=	    t0            
+ 2     t1 	=	    10            
+ 3      a 	=	    t1            
+ 4     t2  =	 &   y
+ 5      x 	=	    t2            
+ 6     t3  =	 *   x
+ 7     t3 	=	     y            
+ 8     t4  =	 *   x
+ 9      y 	=	    t4            
+10     t5 	=	    10            
+11     t6 	=	     5            
+12      v 	=	    t6            
+13      g 	=	  NULL            
+14     t7 	=	   152            
+15     t8 	=	   's'            
+16    tst 	=	    t8            
+17     t9 	=	   't'            
+18    tst 	=	    t9            
+19    t10 	=	   'u'            
+20    tst 	=	   t10            
+21    t11 	=	     0            
+22    t12 	=	   t11     *     1
+23    t13 	=	 testChar[t12]
+24    tst 	=	   t13            
+25    t14 	=	     1            
+26      i 	=	   t14            
+27    t15 	=	    10            
+28    t16 	=	   t15     *     4
+29    t17 	=	     a[t16]
+30     if     i  < t17      goto   35
+31   goto  38
+32    t18 	=	     i            
+33      i 	=	     i     +     1
+34   goto  27
+35    t19 	=	     i            
+36      i 	=	     i     +     1
+37   goto  32
+38    t20 	=	     1            
+39    t21 	=	     i     -   t20
+40      i 	=	   t21            
+41    t22 	=	     i     *     4
+42    t23 	=	     a[t22]
+43     if   t23  <   v      goto   38
+44   goto  45
+45    t24 	=	     2            
+46      i 	=	   t24            
+47    t25 	=	     1            
+48      i 	=	   t25            
+49    t26 	=	     i     *     4
+50    t27 	=	     a[t26]
+51     if     v  > t27      goto   53
+52   goto  56
+53    t28 	=	     i            
+54      i 	=	     i     -     1
+55   goto  49
+56  return    

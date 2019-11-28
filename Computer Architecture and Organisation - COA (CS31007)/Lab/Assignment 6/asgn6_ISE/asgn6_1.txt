@@ -1,0 +1,392 @@
+#################### Question 1 (Ripple Carry Adder) ####################
+
+Data Sheet report: 
+ ----------------- 
+ All values displayed in nanoseconds (ns) 
+  
+ Pad to Pad 
+ ---------------+---------------+---------+ 
+ Source Pad     |Destination Pad|  Delay  | 
+ ---------------+---------------+---------+ 
+ a<0>           |cout           |   10.092| 
+ a<0>           |sum<0>         |    8.278| 
+ a<0>           |sum<1>         |    8.263| 
+ a<0>           |sum<2>         |    8.364| 
+ a<0>           |sum<3>         |    8.465| 
+ a<0>           |sum<4>         |    8.703| 
+ a<0>           |sum<5>         |    9.519| 
+ a<0>           |sum<6>         |    9.801| 
+ a<0>           |sum<7>         |   10.255| 
+ a<1>           |cout           |    9.849| 
+ a<1>           |sum<1>         |    8.016| 
+ a<1>           |sum<2>         |    8.522| 
+ a<1>           |sum<3>         |    8.222| 
+ a<1>           |sum<4>         |    8.460| 
+ a<1>           |sum<5>         |    9.276| 
+ a<1>           |sum<6>         |    9.558| 
+ a<1>           |sum<7>         |   10.012| 
+ a<2>           |cout           |    9.852| 
+ a<2>           |sum<2>         |    7.737| 
+ a<2>           |sum<3>         |    8.225| 
+ a<2>           |sum<4>         |    8.463| 
+ a<2>           |sum<5>         |    9.279| 
+ a<2>           |sum<6>         |    9.561| 
+ a<2>           |sum<7>         |   10.015| 
+ a<3>           |cout           |    9.378| 
+ a<3>           |sum<3>         |    7.168| 
+ a<3>           |sum<4>         |    7.975| 
+ a<3>           |sum<5>         |    8.805| 
+ a<3>           |sum<6>         |    9.087| 
+ a<3>           |sum<7>         |    9.541| 
+ a<4>           |cout           |    9.192| 
+ a<4>           |sum<4>         |    7.803| 
+ a<4>           |sum<5>         |    8.619| 
+ a<4>           |sum<6>         |    8.901| 
+ a<4>           |sum<7>         |    9.355| 
+ a<5>           |cout           |    7.942| 
+ a<5>           |sum<5>         |    7.141| 
+ a<5>           |sum<6>         |    7.635| 
+ a<5>           |sum<7>         |    8.105| 
+ a<6>           |cout           |    7.037| 
+ a<6>           |sum<6>         |    6.744| 
+ a<6>           |sum<7>         |    7.200| 
+ a<7>           |cout           |    7.556| 
+ a<7>           |sum<7>         |    7.711| 
+ b<0>           |cout           |   10.334| 
+ b<0>           |sum<0>         |    9.026| 
+ b<0>           |sum<1>         |    9.012| 
+ b<0>           |sum<2>         |    8.891| 
+ b<0>           |sum<3>         |    8.707| 
+ b<0>           |sum<4>         |    8.945| 
+ b<0>           |sum<5>         |    9.761| 
+ b<0>           |sum<6>         |   10.043| 
+ b<0>           |sum<7>         |   10.497| 
+ b<1>           |cout           |   10.106| 
+ b<1>           |sum<1>         |    9.046| 
+ b<1>           |sum<2>         |    8.937| 
+ b<1>           |sum<3>         |    8.479| 
+ b<1>           |sum<4>         |    8.717| 
+ b<1>           |sum<5>         |    9.533| 
+ b<1>           |sum<6>         |    9.815| 
+ b<1>           |sum<7>         |   10.269| 
+ b<2>           |cout           |    9.441| 
+ b<2>           |sum<2>         |    8.109| 
+ b<2>           |sum<3>         |    7.814| 
+ b<2>           |sum<4>         |    8.052| 
+ b<2>           |sum<5>         |    8.868| 
+ b<2>           |sum<6>         |    9.150| 
+ b<2>           |sum<7>         |    9.604| 
+ b<3>           |cout           |    9.557| 
+ b<3>           |sum<3>         |    7.454| 
+ b<3>           |sum<4>         |    8.156| 
+ b<3>           |sum<5>         |    8.984| 
+ b<3>           |sum<6>         |    9.266| 
+ b<3>           |sum<7>         |    9.720| 
+ b<4>           |cout           |   10.140| 
+ b<4>           |sum<4>         |    8.739| 
+ b<4>           |sum<5>         |    9.567| 
+ b<4>           |sum<6>         |    9.849| 
+ b<4>           |sum<7>         |   10.303| 
+ b<5>           |cout           |    7.053| 
+ b<5>           |sum<5>         |    6.840| 
+ b<5>           |sum<6>         |    6.754| 
+ b<5>           |sum<7>         |    7.216| 
+ b<6>           |cout           |    7.442| 
+ b<6>           |sum<6>         |    7.139| 
+ b<6>           |sum<7>         |    7.605| 
+ b<7>           |cout           |    7.081| 
+ b<7>           |sum<7>         |    7.240| 
+ ---------------+---------------+---------+ 
+ 
+
+
+ 
+ Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   12  out of  63400     0%  
+    Number used as Logic:                12  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:      12  out of     12   100%  
+   Number with an unused LUT:             0  out of     12     0%  
+   Number of fully used LUT-FF pairs:     0  out of     12     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    210    11%  
+
+ 
+ 
+ 
+ Delay:               2.527ns (Levels of Logic = 6)
+  Source:            a<2> (PAD)
+  Destination:       cout (PAD)
+
+  Data Path: a<2> to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.697  a_2_IBUF (a_2_IBUF)
+     LUT6:I0->O            3   0.097   0.389  A2/c1 (c<2>)
+     LUT5:I3->O            3   0.097   0.389  A4/c1 (c<4>)
+     LUT5:I3->O            2   0.097   0.383  A6/c1 (c<6>)
+     LUT3:I1->O            1   0.097   0.279  A7/c1 (cout_OBUF)
+     OBUF:I->O                 0.000          cout_OBUF (cout)
+    ----------------------------------------
+    Total                      2.527ns (0.389ns logic, 2.138ns route)
+                                       (15.4% logic, 84.6% route)
+################### Question 2 (Carry Look Ahead Adder) #################
+
+Data Sheet report: 
+ ----------------- 
+ All values displayed in nanoseconds (ns) 
+  
+ Pad to Pad 
+ ---------------+---------------+---------+ 
+ Source Pad     |Destination Pad|  Delay  | 
+ ---------------+---------------+---------+ 
+ a<0>           |cout           |    9.346| 
+ a<0>           |sum<0>         |    7.880| 
+ a<0>           |sum<1>         |    7.352| 
+ a<0>           |sum<2>         |    7.844| 
+ a<0>           |sum<3>         |    8.079| 
+ a<0>           |sum<4>         |    9.048| 
+ a<0>           |sum<5>         |    9.157| 
+ a<0>           |sum<6>         |    9.372| 
+ a<0>           |sum<7>         |   10.311| 
+ a<1>           |cout           |    9.373| 
+ a<1>           |sum<1>         |    7.387| 
+ a<1>           |sum<2>         |    7.426| 
+ a<1>           |sum<3>         |    7.072| 
+ a<1>           |sum<4>         |    9.075| 
+ a<1>           |sum<5>         |    9.184| 
+ a<1>           |sum<6>         |    9.399| 
+ a<1>           |sum<7>         |   10.338| 
+ a<2>           |cout           |    8.706| 
+ a<2>           |sum<2>         |    7.194| 
+ a<2>           |sum<3>         |    6.827| 
+ a<2>           |sum<4>         |    8.408| 
+ a<2>           |sum<5>         |    8.517| 
+ a<2>           |sum<6>         |    8.732| 
+ a<2>           |sum<7>         |    9.671| 
+ a<3>           |cout           |    8.177| 
+ a<3>           |sum<3>         |    7.765| 
+ a<3>           |sum<4>         |    7.879| 
+ a<3>           |sum<5>         |    7.988| 
+ a<3>           |sum<6>         |    8.203| 
+ a<3>           |sum<7>         |    9.142| 
+ a<4>           |cout           |    8.030| 
+ a<4>           |sum<4>         |    7.183| 
+ a<4>           |sum<5>         |    7.218| 
+ a<4>           |sum<6>         |    7.629| 
+ a<4>           |sum<7>         |    8.362| 
+ a<5>           |cout           |    8.097| 
+ a<5>           |sum<5>         |    7.408| 
+ a<5>           |sum<6>         |    7.611| 
+ a<5>           |sum<7>         |    8.550| 
+ a<6>           |cout           |    7.435| 
+ a<6>           |sum<6>         |    6.818| 
+ a<6>           |sum<7>         |    7.885| 
+ a<7>           |cout           |    7.194| 
+ a<7>           |sum<7>         |    7.635| 
+ b<0>           |cout           |   10.510| 
+ b<0>           |sum<0>         |    8.330| 
+ b<0>           |sum<1>         |    8.510| 
+ b<0>           |sum<2>         |    8.810| 
+ b<0>           |sum<3>         |    8.537| 
+ b<0>           |sum<4>         |   10.212| 
+ b<0>           |sum<5>         |   10.321| 
+ b<0>           |sum<6>         |   10.536| 
+ b<0>           |sum<7>         |   11.475| 
+ b<1>           |cout           |   10.582| 
+ b<1>           |sum<1>         |    8.580| 
+ b<1>           |sum<2>         |    8.552| 
+ b<1>           |sum<3>         |    8.639| 
+ b<1>           |sum<4>         |   10.284| 
+ b<1>           |sum<5>         |   10.393| 
+ b<1>           |sum<6>         |   10.608| 
+ b<1>           |sum<7>         |   11.547| 
+ b<2>           |cout           |    8.413| 
+ b<2>           |sum<2>         |    7.698| 
+ b<2>           |sum<3>         |    7.099| 
+ b<2>           |sum<4>         |    8.115| 
+ b<2>           |sum<5>         |    8.224| 
+ b<2>           |sum<6>         |    8.439| 
+ b<2>           |sum<7>         |    9.378| 
+ b<3>           |cout           |    8.468| 
+ b<3>           |sum<3>         |    8.062| 
+ b<3>           |sum<4>         |    8.170| 
+ b<3>           |sum<5>         |    8.279| 
+ b<3>           |sum<6>         |    8.494| 
+ b<3>           |sum<7>         |    9.433| 
+ b<4>           |cout           |   10.168| 
+ b<4>           |sum<4>         |    9.317| 
+ b<4>           |sum<5>         |    9.517| 
+ b<4>           |sum<6>         |   10.163| 
+ b<4>           |sum<7>         |   10.667| 
+ b<5>           |cout           |    8.361| 
+ b<5>           |sum<5>         |    7.880| 
+ b<5>           |sum<6>         |    8.099| 
+ b<5>           |sum<7>         |    9.038| 
+ b<6>           |cout           |    7.443| 
+ b<6>           |sum<6>         |    7.284| 
+ b<6>           |sum<7>         |    7.887| 
+ b<7>           |cout           |    7.342| 
+ b<7>           |sum<7>         |    7.435| 
+ ---------------+---------------+---------+ 
+ 
+ 
+ 
+ 
+ Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   21  out of  63400     0%  
+    Number used as Logic:                21  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     21
+   Number with an unused Flip Flop:      21  out of     21   100%  
+   Number with an unused LUT:             0  out of     21     0%  
+   Number of fully used LUT-FF pairs:     0  out of     21     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    210    11%  
+ 
+ 
+ 
+ 
+ Delay:               3.356ns (Levels of Logic = 7)
+  Source:            a<1> (PAD)
+  Destination:       sum<7> (PAD)
+
+  Data Path: a<1> to sum<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.570  a_1_IBUF (a_1_IBUF)
+     LUT4:I0->O            1   0.097   0.295  Adder1/Madd_cout_Madd_lut<0>1_SW0 (N4)
+     LUT5:I4->O            3   0.097   0.521  Adder1/Madd_cout_Madd_lut<0>1 (Adder1/Madd_cout_Madd_lut<0>)
+     LUT5:I2->O            3   0.097   0.693  Adder2/n0062<0>11 (Adder2/n0062<0>1)
+     LUT6:I1->O            1   0.097   0.511  Adder2/Madd_C<3>_Madd_xor<0>11 (Adder2/C<3>)
+     LUT3:I0->O            1   0.097   0.279  Adder2/Mxor_sum_3_xo<0>1 (sum_7_OBUF)
+     OBUF:I->O                 0.000          sum_7_OBUF (sum<7>)
+    ----------------------------------------
+    Total                      3.356ns (0.486ns logic, 2.870ns route)
+                                       (14.5% logic, 85.5% route)
+
+###################### Question 3 (Bit Serial Adder) ######################
+
+ Data Sheet report: 
+ ----------------- 
+ All values displayed in nanoseconds (ns) 
+  
+ Setup/Hold to clock clk 
+ ------------+------------+------------+------------+------------+------------------+--------+ 
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  | 
+ Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  | 
+ ------------+------------+------------+------------+------------+------------------+--------+ 
+ a<0>        |   -0.423(R)|      FAST  |    2.148(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<1>        |   -0.540(R)|      FAST  |    2.290(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<2>        |   -0.638(R)|      FAST  |    2.414(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<3>        |   -0.783(R)|      FAST  |    2.623(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<4>        |   -0.807(R)|      FAST  |    2.674(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<5>        |   -0.706(R)|      FAST  |    2.532(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<6>        |   -0.575(R)|      FAST  |    2.338(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ a<7>        |   -0.399(R)|      FAST  |    2.173(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<0>        |    0.165(R)|      FAST  |    2.034(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<1>        |    0.313(R)|      FAST  |    1.782(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<2>        |   -0.564(R)|      FAST  |    2.407(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<3>        |   -0.238(R)|      FAST  |    1.993(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<4>        |    0.636(R)|      FAST  |    0.918(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<5>        |   -0.421(R)|      FAST  |    2.172(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<6>        |   -0.477(R)|      FAST  |    2.239(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ b<7>        |   -0.421(R)|      FAST  |    2.356(R)|      SLOW  |clk_BUFGP         |   0.000| 
+ ------------+------------+------------+------------+------------+------------------+--------+ 
+  
+ Clock clk to Pad 
+ ------------+-----------------+------------+-----------------+------------+------------------+--------+ 
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  | 
+ Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  | 
+ ------------+-----------------+------------+-----------------+------------+------------------+--------+ 
+ cout        |        10.599(R)|      SLOW  |         4.143(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<0>      |        10.330(R)|      SLOW  |         4.146(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<1>      |        10.053(R)|      SLOW  |         3.998(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<2>      |        10.177(R)|      SLOW  |         4.059(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<3>      |         9.589(R)|      SLOW  |         3.760(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<4>      |         9.691(R)|      SLOW  |         3.809(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<5>      |         9.888(R)|      SLOW  |         3.937(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<6>      |         9.731(R)|      SLOW  |         3.845(R)|      FAST  |clk_BUFGP         |   0.000| 
+ sum<7>      |         9.868(R)|      SLOW  |         3.926(R)|      FAST  |clk_BUFGP         |   0.000| 
+ ------------+-----------------+------------+-----------------+------------+------------------+--------+ 
+  
+ Clock to Setup on destination clock clk 
+ ---------------+---------+---------+---------+---------+ 
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall| 
+ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall| 
+ ---------------+---------+---------+---------+---------+ 
+ clk            |    1.624|         |         |         | 
+ ---------------+---------+---------+---------+---------+ 
+ 
+ 
+ 
+ 
+ Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              29  out of  126800     0%  
+ Number of Slice LUTs:                   27  out of  63400     0%  
+    Number used as Logic:                27  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     33
+   Number with an unused Flip Flop:       4  out of     33    12%  
+   Number with an unused LUT:             6  out of     33    18%  
+   Number of fully used LUT-FF pairs:    23  out of     33    69%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    210    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ 
+ 
+ 
+ 
+ 
+ Delay:               1.589ns (Levels of Logic = 2)
+  Source:            state_2 (FF)
+  Destination:       D/d (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_2 to D/d
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             21   0.361   0.647  state_2 (state_2)
+     LUT4:I0->O           19   0.097   0.379  D/n0002_inv11 (D/n0002_inv)
+     LUT5:I4->O            1   0.097   0.000  D/d_rstpot1 (D/d_rstpot1)
+     FD:D                      0.008          D/d
+    ----------------------------------------
+    Total                      1.589ns (0.563ns logic, 1.026ns route)
+                                       (35.4% logic, 64.6% route)

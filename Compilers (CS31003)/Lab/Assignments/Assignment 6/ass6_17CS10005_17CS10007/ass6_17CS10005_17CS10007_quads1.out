@@ -1,0 +1,83 @@
+********************Here are all Quads**********************
+--------------------------------------------------------
+*********************Quads******************************
+0 : function printInt start
+1 : function printInt end
+2 : function printStr start
+3 : function printStr end
+4 : function readInt start
+5 : function readInt end
+6 : function main start
+7 : param .LC0
+8 : call printStr 1
+9 : param .LC1
+10 : call printStr 1
+11 : t0= &p
+12 : param t0
+13 : call readInt 1
+14 : a = readInt
+15 : param .LC2
+16 : call printStr 1
+17 : t1= &p
+18 : param t1
+19 : call readInt 1
+20 : b = readInt
+21 : param .LC3
+22 : call printStr 1
+23 : a*b
+24 : param t2
+25 : call printInt 1
+26 : param .LC4
+27 : call printStr 1
+28 : t3 = 0
+29 : return t3
+30 : function main end
+
+----------------SYMBOL TABLE (ST.gbl)-----------------------
+Name	Type	Size	Offset	InitVal
+---------------------------------------
+printInt	function	1		4	0	NULL
+printStr	function	1		4	4	NULL
+readInt	function	1		4	8	NULL
+main	function	0		0	12	NULL
+----------------------------------------------------
+----------------SYMBOL TABLE of printInt----------------
+Name	Type	Size	Offset	InitVal
+---------------------------------------
+num	int		4	0	NULL
+retVal	int		4	4	NULL
+--------------------------------------------
+----------------SYMBOL TABLE of printStr----------------
+Name	Type	Size	Offset	InitVal
+---------------------------------------
+c	char		1	0	NULL
+retVal	int		4	1	NULL
+--------------------------------------------
+----------------SYMBOL TABLE of readInt----------------
+Name	Type	Size	Offset	InitVal
+---------------------------------------
+eP	int		4	0	NULL
+retVal	int		4	4	NULL
+--------------------------------------------
+----------------SYMBOL TABLE of main----------------
+Name	Type	Size	Offset	InitVal
+---------------------------------------
+a	int		4	0	NULL
+b	int		4	4	NULL
+p	int		4	8	NULL
+printStr	int		4	12	NULL
+.LC0	int		4	16	NULL
+.LC1	int		4	20	NULL
+readInt	int		4	24	NULL
+t0	int		8	28	NULL
+.LC2	int		4	36	NULL
+t1	int		8	40	NULL
+.LC3	int		4	48	NULL
+printInt	int		4	52	NULL
+t2	int		4	56	NULL
+.LC4	int		4	60	NULL
+t3	int		4	64	0
+retVal	int		4	68	NULL
+--------------------------------------------
+----------------Compilation Result------------------
+*****************************************************

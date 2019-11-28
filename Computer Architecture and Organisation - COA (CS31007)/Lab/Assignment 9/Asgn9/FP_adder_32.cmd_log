@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 9/Asgn9/FP_adder_32.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 9/Asgn9/FP_adder_32.syr" 

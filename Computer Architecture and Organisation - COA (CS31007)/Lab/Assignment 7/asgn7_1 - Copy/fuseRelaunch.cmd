@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_1 - Copy/Barrel_Shifter_tb_isim_beh.exe" -prj "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 7/asgn7_1 - Copy/Barrel_Shifter_tb_beh.prj" "work.Barrel_Shifter_tb" "work.glbl" 

@@ -1,0 +1,4 @@
+verilog work "MUX_2x1.v"
+verilog work "Barrel_Shifter.v"
+verilog work "Barrel_Shifter_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 7\asgn7_1\Barrel_Shifter.ncd
+OUTFILE=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 7\asgn7_1\Barrel_Shifter.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 7\asgn7_1
+LICENSE=WebPack
+USER_INFO=211778892_0_0_556

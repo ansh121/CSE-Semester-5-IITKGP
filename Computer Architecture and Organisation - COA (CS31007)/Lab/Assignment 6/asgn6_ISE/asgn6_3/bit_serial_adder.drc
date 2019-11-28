@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Aug 19 21:53:28 2019
+
+drc -z Bit_Serial_Adder.ncd Bit_Serial_Adder.pcf
+
+DRC detected 0 errors and 0 warnings.

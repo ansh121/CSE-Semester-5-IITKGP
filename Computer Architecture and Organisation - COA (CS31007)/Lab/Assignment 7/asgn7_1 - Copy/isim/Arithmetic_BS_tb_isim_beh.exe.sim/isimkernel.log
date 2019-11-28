@@ -1,0 +1,29 @@
+Command line:
+   Arithmetic_BS_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50701
+
+Wed Oct 30 15:35:04 2019
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5159.87 Meg
+
+ Total Signals          : 46
+ Total Nets             : 370
+ Total Signal Drivers   : 17
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 19
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 487
+Total Line Count : 31
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 5159.87 Meg
+
+Wed Oct 30 15:35:29 2019
+

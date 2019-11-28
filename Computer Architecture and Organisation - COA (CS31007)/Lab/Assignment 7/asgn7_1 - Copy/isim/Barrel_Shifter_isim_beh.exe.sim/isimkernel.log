@@ -1,0 +1,29 @@
+Command line:
+   Barrel_Shifter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50710
+
+Wed Oct 30 15:36:38 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5159.88 Meg
+
+ Total Signals          : 46
+ Total Nets             : 371
+ Total Signal Drivers   : 15
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 16
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 451
+Total Line Count : 24
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5159.88 Meg
+
+Wed Oct 30 15:36:46 2019
+

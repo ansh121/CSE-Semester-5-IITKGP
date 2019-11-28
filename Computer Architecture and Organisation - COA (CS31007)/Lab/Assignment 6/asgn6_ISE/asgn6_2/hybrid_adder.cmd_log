@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "hybrid_adder.ngc" hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -t 1 hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "hybrid_adder.ngc" hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -t 1 hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "hybrid_adder.ngc" hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -t 1 hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "hybrid_adder.ngc" hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -t 1 hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf 
+xst -intstyle ise -ifn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.xst" -ofn "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hybrid_adder.ucf -p xc3s400-pq208-4 "hybrid_adder.ngc" hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hybrid_adder.ucf -p xc3s400-pq208-4 hybrid_adder.ngc hybrid_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -t 1 hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf -ucf hybrid_adder.ucf 
+bitgen -intstyle ise -f hybrid_adder.ut hybrid_adder.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.xst" -ofn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hybrid_adder.ucf -p xc7a100t-csg324-3 hybrid_adder.ngc hybrid_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -mt off hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf -ucf hybrid_adder.ucf 
+bitgen -intstyle ise -f hybrid_adder.ut hybrid_adder.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.xst" -ofn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hybrid_adder.ucf -p xc7a100t-csg324-3 hybrid_adder.ngc hybrid_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -mt off hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf -ucf hybrid_adder.ucf 
+bitgen -intstyle ise -f hybrid_adder.ut hybrid_adder.ncd 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.xst" -ofn "C:/Users/student/Desktop/asgn6_2/hybrid_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hybrid_adder.ucf -p xc7a100t-csg324-3 hybrid_adder.ngc hybrid_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o hybrid_adder_map.ncd hybrid_adder.ngd hybrid_adder.pcf 
+par -w -intstyle ise -ol high -mt off hybrid_adder_map.ncd hybrid_adder.ncd hybrid_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hybrid_adder.twx hybrid_adder.ncd -o hybrid_adder.twr hybrid_adder.pcf -ucf hybrid_adder.ucf 
+bitgen -intstyle ise -f hybrid_adder.ut hybrid_adder.ncd 

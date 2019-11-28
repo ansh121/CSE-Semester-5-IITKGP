@@ -1,0 +1,53 @@
+Parsing successful
+ NAME                                               TYPE   INITIAL VALUE  SIZE  OFFSET      NEXT TABLE
+
+GlobalTable
+testInt                                                int            NULL     4       0           (nil)
+   t0                                                int            NULL     4       0           (nil)
+ main                                               void            NULL     0       0       0x1a8a0c0
+factorial                                                int            NULL     0       0       0x1a8e9a0
+
+main Function
+    n                                                int               6     4       0            null 
+   t1                                                int               6     4       4            null 
+   fn                                                int               0     4       8            null 
+factorial                                               char                     0      12            null 
+   t2                                               char                     0      12            null 
+
+factorial Function
+    n                                                int               0     4       0            null 
+    m                                                int               0     4       4            null 
+   t3                                                int               1     4       8            null 
+   t4                                                int               0     4      12            null 
+    r                                                int               0     4      16            null 
+   t5                                                int               1     4      20            null 
+   fn                                                int               0     4      24            null 
+   t6                                                int               1     4      28            null 
+   t7                                                int               0     4      32            null 
+   t8                                               char                     0      36            null 
+   t9                                                int               0     4      36            null 
+
+quads
+ 0     t0 	=	     8            
+ 1  testInt 	=	    t0            
+ 2     t1 	=	     6            
+ 3      n 	=	    t1            
+ 4  param   n
+ 5     t2 	=	  call factorial,    1
+ 6     fn 	=	    t2            
+ 7  return    
+ 8     t3 	=	     1            
+ 9     t4 	=	     n     -    t3
+10      m 	=	    t4            
+11     t5 	=	     1            
+12      r 	=	    t5            
+13     if     m ==   0      goto   22
+14   goto  15
+15     t6 	=	     1            
+16     t7 	=	     m     -    t6
+17  param  t7
+18     t8 	=	  call factorial,    1
+19     fn 	=	    t8            
+20     t9 	=	     n     *    fn
+21      r 	=	    t9            
+22  return   r

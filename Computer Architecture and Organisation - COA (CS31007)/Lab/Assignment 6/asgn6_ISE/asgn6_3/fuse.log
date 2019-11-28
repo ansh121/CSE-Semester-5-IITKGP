@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/test_bench_isim_beh.exe -prj D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/test_bench_beh.prj work.test_bench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/Bit_Serial_Adder.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/test_bench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Parallen_in_Serial_out
+Compiling module D_flip_flop
+Compiling module Serial_in_Parallel_out
+Compiling module Bit_Serial_Adder
+Compiling module test_bench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 6/asgn6/asgn6_3/test_bench_isim_beh.exe
+Fuse Memory Usage: 27480 KB
+Fuse CPU Usage: 296 ms

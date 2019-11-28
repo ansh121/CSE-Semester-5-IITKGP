@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Aug 19 21:52:52 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "N17" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "sum<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "sum<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "sum<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "sum<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sum<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "sum<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "sum<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "a<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sum<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "a<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "cout" LOCATE = SITE "V16" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "a<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "a<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "R16" LEVEL 1;
+COMP "a<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "reset" LOCATE = SITE "P18" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "T13" LEVEL 1;
+COMP "a<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "b<4>" LOCATE = SITE "H6" LEVEL 1;
+COMP "b<5>" LOCATE = SITE "U12" LEVEL 1;
+COMP "b<6>" LOCATE = SITE "U11" LEVEL 1;
+COMP "b<7>" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+
